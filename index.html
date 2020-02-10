@@ -34,6 +34,8 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/app.css" rel="stylesheet">
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
 </head>
 <body>
 <div class="container">
@@ -118,7 +120,7 @@
                                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
                             </div>
 
-                            <button onClick="window.location.reload();"
+                            <button onClick="success();"
                                     style="background-color: red;color: #ffff;border-radius: 6px;font-size: 40px;width: 100%;">
                                 Submit
                             </button>
@@ -159,6 +161,16 @@
     <!-- End Post -->
     <div id="123"></div>
 </div>
+    <script>
+        function success(){
+            Swal.fire(
+  'Good job!',
+  'Tahnks for your submission',
+  'success'
+)
+        }
+        
+    </script>
 <!-- End Article -->
 <script>$('#show').on('click', function () {
     $('html, body').animate({
